@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_heroku import Heroku
 
 app = Flask(__name__)
-app.config['SQLACHEMY_DATABASE_URI'] = ''
+app.config['SQLACHEMY_DATABASE_URI'] = 'postgres://oaicjxmkjavfpf:9a3dc4fe3e453dca446dbeb444b2639ea0335ce916348177e826b31764e2b958@ec2-54-243-61-194.compute-1.amazonaws.com:5432/ddvm2trl2d6crq'
 heroku = Heroku(app)
 db = SQLAlchemy(app)
 
