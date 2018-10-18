@@ -2,7 +2,8 @@
 <html>
 <head>
     {% block head %}
-  <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
 <body>
